@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #im1{
+            height: 500px;
+            width: 500px;
+        }
+        .detailbox{
+
+            height: 432px;
+            width: 385px;
+            position: relative;
+            bottom: 435px;
+            left: 519px;
+
+        }
+        #form1{
+
+            height: 500px;
+            width: 384px;
+            position: relative;
+            bottom: 409px;
+        }
+    #view{
+
+    height: 500px;
+    width: 384px;
+    position: relative;
+        bottom: 912px;
+        left: 415px;
+}
+
+    </style>
+</head>
+<body onload="loaddata()" background="websitebmain2.jpg">
+<div class="navbar">
+    <a href="#home">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Guitars
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="Guitar-2.html">Electric Guitars</a>
+            <a href="#">Acoustic Guitars</a>
+            <a href="#">Acoustic Electric Guitars</a>
+            <a href="#">Classical Guitars</a>
+        </div>
+
+    </div>
+    <a href="#Bass">Bass</a>
+    <a href="#Drums">Drums</a>
+    <a href="#Keyboards">Keyboards</a>
+    <a href="#Dj & Lighting">Dj & Lighting</a>
+    <a href="Used Guitar">Used Guitar</a>
+    <a href="#Clearence">Clearence</a>
+</div>
+
+
+<div>
+    <img id="im1" >
+
+
+<div class="detailbox">
+        <div id="pd" style="color: white"> </div><br><br>
+        <div id="sd"style="color: white"> </div><br><br>
+        <div id="customer_reviews"style="color: white"> </div><br><br>
+        <div id="price"style="color: white"> </div><br><br>
+</div>
+
+</div>
+</div>
+<div id="form Div">
+    <form id="form1" onsubmit="return fct1()">
+        <span style="color: skyblue">First Name:</span><input type="text"  id="fname"><br><br>
+      <span style="color: skyblue">  Last Name: </span><input type="text"  id="lname"><br><br>
+        <span style="color: skyblue"> Gender :</span> <input type="radio" value="male" id="genderMale"><span style="color: cornflowerblue"> Male</span>
+        <input type="radio" value="female" id="genderfemale"><span style="color: deeppink"> Female</span><br><br>
+       <span style="color: skyblue"></span> <select name="state" id="state"><br>
+            <option> New York</option>
+            <option> New Jersey</option>
+            <option> California</option>
+            <option>Texas</option>
+        </select>
+       <span style="color: skyblue"> Email:</span> <input type="email" id="email"> <br><br>
+        <span style="color: skyblue"> Credit Card :</span> <input type="number" id="no"><br> <br>
+        <span style="color: skyblue">Password :</span> <input type="password" id="pwd"><br> <br>
+
+            <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<div id="view">
+     <p style="color: skyblue" id="p1"></p>
+    <p style="color: skyblue"  id="p2"> </p> <br>
+    <p style="color: skyblue"  id="p3"> </p><br>
+    <p style="color: skyblue"  id="p4"></p>
+    <p style="color: skyblue"  id="p5"> </p><br>
+    <p style="color: skyblue"  id="p6">  </p><br>
+    <p style="color: skyblue"  id="p7"> </p>
+    <p style="color: skyblue"  id="p8"> </p>
+    <input type="button"  value="Edit" id="edit" onclick="fct3()" hidden>
+    <form id="formconf" action="Guitar-4.html">
+        <button type="submit"  id="btn3" onclick="load_data()">Buy</button>
+    </form>
+
+</div>
+<script src="Guitar%20Ajax%20call-2.js"></script>
+
+</body>
+</html>
